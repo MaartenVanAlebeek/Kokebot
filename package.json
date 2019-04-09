@@ -1,0 +1,16 @@
+{
+  "name": "kokebot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kokelob",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.4.2",
+    "nodemon": "^1.18.10",
+    "typescript": "^3.4.2"
+  }
+}
