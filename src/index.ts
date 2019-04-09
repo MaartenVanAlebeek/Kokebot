@@ -47,6 +47,7 @@ bot.on('message', async message => {
     if(!message.content.startsWith(ConfigFile.config.prefix)) return;
     if(message.channel.type == 'dm') return;
 
-    // Forward
-    commandHandler.forwardCommand(prefix, message);
+    // Send Result
+    // TODO: SendMessage method with channel parameter input
+    return message.channel.send(commandHandler.forwardCommand(prefix, message));
 });
