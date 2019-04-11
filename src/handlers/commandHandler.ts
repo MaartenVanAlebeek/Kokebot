@@ -7,8 +7,6 @@ export class CommandHandler {
     // Forwards a command to the appropriate class
     forwardCommand(prefix: string, message: any){
 
-        let result: string; // TODO: result = result from function calls
-
         const messageArray = message.content.split(' ');
         let cmd = messageArray[0].replace(prefix, '').toLowerCase();
         let args = messageArray.slice(1);
@@ -22,6 +20,7 @@ export class CommandHandler {
             case 'hello':
                 command = new HelloCommand(cmd, args);
                 break;
+            // TODO: server count
             default: 
                 command = new UnrecognizedCommand(cmd, args, prefix);
                 break;

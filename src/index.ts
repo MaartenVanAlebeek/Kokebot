@@ -13,6 +13,7 @@ export class Main {
         this.commandHandler = new CommandHandler();
     }
 
+    // TODO: Get prefix by server ID from database, return result of call through commandHandler
     getPrefix(){
         return this.prefix;
     }
